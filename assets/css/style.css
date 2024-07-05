@@ -1,0 +1,458 @@
+body {
+	margin: 0;
+	background-color: #282828;
+	width: 100%;
+	  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+	font-size: 1em;
+}
+
+a {
+	color: #FF9013;
+}
+
+label {
+	z-index:7;
+}
+
+.title {
+	  z-index: 5;
+	color: #fff;
+	font-size: 3em;
+	margin-top: 0;
+	margin-left: 0.4em;
+	  font-weight: 900;
+		position: relative;
+		top: 0em;
+	border-bottom: 1px solid;
+}
+
+.title::before{		/*タイトル横の矢印*/
+	content:"";
+	width: 25px;
+	height:25px;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	-webkit-transform: rotate(45deg);
+	position: absolute;
+	top:calc( 50% - 15px );
+	right: -75px;
+	transform: rotate(135deg);
+}
+
+.number {
+	  z-index: 5;
+	font-size: 10em;
+font-family: "ab-quadra", sans-serif;
+font-weight: 400;
+font-style: normal;
+		margin-top: 0;
+	position: relative;
+			top: 0em;
+	color: #fff;
+	text-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+	
+}
+
+.contents {
+	position: relative;
+	vertical-align: top;
+		margin-top: 0;
+	padding: 0 5% 0 5%;
+}
+
+.adjust {
+	position: relative;
+	top: 3em;
+}
+
+.rist {
+	color: #fff;
+	padding: 0 0% 0 6%;	
+}
+
+.rist div {
+	margin: 1em 0;
+}
+
+.rist .col-lg-10 {
+	display: flex;
+    align-items: center;
+}
+
+.rist .kaijo {
+	margin: 0;
+}
+
+.square {
+	  display: table-cell;
+  vertical-align: middle;
+	border: 1px solid;
+	text-align: center;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	padding: 0.5em 0; 
+	font-weight: 600;
+	
+}
+
+.copy {
+	font-weight: 900;
+	font-size: 2em;
+}
+
+#wrapper {
+	width: 100%;
+	padding: 0;
+	overflow:hidden;
+}
+
+#header {
+	margin: 0;
+}
+
+#hero {
+	margin: 0;
+}
+
+#outline {
+	position: relative;
+	font-weight: 500;
+	text-align: center;
+	color: #fff;
+	padding: 20px 20px 10px 20px;
+background-size: auto auto;
+background-color: rgba(30, 30, 30, 1);
+background-image: repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255, 255, 255, 0.11) 2px, rgba(255, 255, 255, 0.11) 4px );
+}
+
+#outline::before {
+  content: '';
+  display: block;
+  position: absolute;
+  right:0;
+  bottom: 0;
+  border-top: 60px solid transparent; 
+  border-left: 30vw solid transparent; 
+  border-right: 30vw solid #EDEDED; 
+  border-bottom: 60px solid #EDEDED; 
+}
+
+#outline::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  border-top: 60px solid transparent; 
+  border-right: 30vw solid transparent; 
+  border-left: 30vw solid #EDEDED; 
+  border-bottom: 60px solid #EDEDED; 
+}
+
+#kv {
+	width: 100%;
+}
+
+#news {
+	text-align: center;
+	color: #000;
+	background-color: #EDEDED;
+	padding: 20px 0px 30px 0px;
+  position: relative;
+	padding-bottom: 10em;
+}
+
+#news h2 {
+		  font-family: "Anton SC", sans-serif;
+  font-weight: 500;
+	font-size: 3em;
+  font-style: normal;
+}
+
+/*#news::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  border-top: 60px solid transparent; 
+  border-right: 50vw solid transparent; 
+  border-left: 50vw solid #FF9013; 
+  border-bottom: 60px solid #FF9013; 
+}*/
+
+#july {
+	background: #FF9013;
+  position: relative;
+		padding-bottom: 10em;
+	background-image: url("../../images/BG.png");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#july::before {
+  content: '';
+  display: block;
+  position: absolute;
+  right:0;
+  top: 0;
+  border-bottom: 30px solid transparent; 
+  border-left: 50vw solid transparent; 
+  border-right: 50vw solid #EDEDED; 
+  border-top: 30px solid #EDEDED; 
+}
+
+#july::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  border-top: 30px solid transparent; 
+  border-right: 50vw solid transparent; 
+  border-left: 50vw solid #EDEDED; 
+  border-bottom: 30px solid #EDEDED; 
+}
+
+#august {
+	position: relative;
+	background: #938A00;
+			padding-bottom: 1em;
+		background-image: url("../../images/BG.png");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#august::before {
+  content: '';
+  display: block;
+  position: absolute;
+  right:0;
+  top: 0;
+  border-bottom: 30px solid transparent; 
+  border-left: 50vw solid transparent; 
+  border-right: 50vw solid #EDEDED;
+  border-top: 30px solid #EDEDED; 
+}
+
+#august::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  border-top: 30px solid transparent; 
+  border-right: 50vw solid transparent; 
+  border-left: 50vw solid #EDEDED; 
+  border-bottom: 30px solid #EDEDED; 
+}
+
+#september {
+	position: relative;
+	background:#5B1C1D;
+			background-image: url("../../images/BG.png");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#september::before {
+  content: '';
+  display: block;
+  position: absolute;
+  right:0;
+  top: 0;
+  border-bottom: 30px solid transparent; 
+  border-left: 50vw solid transparent; 
+  border-right: 50vw solid #EDEDED;
+  border-top: 30px solid #EDEDED; 
+}
+
+#september::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  border-top: 30px solid transparent; 
+  border-right: 50vw solid transparent; 
+  border-left: 50vw solid #EDEDED; 
+  border-bottom: 30px solid #EDEDED; 
+}
+
+#october {
+		position: relative;
+	background: #5A1D6E;
+			background-image: url("../../images/BG.png");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#october::before {
+  content: '';
+  display: block;
+  position: absolute;
+  right:0;
+  top: 0;
+  border-bottom: 30px solid transparent; 
+  border-left: 50vw solid transparent; 
+  border-right: 50vw solid #EDEDED;
+  border-top: 30px solid #EDEDED; 
+}
+
+#october::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  border-top: 30px solid transparent; 
+  border-right: 50vw solid transparent; 
+  border-left: 50vw solid #EDEDED; 
+  border-bottom: 30px solid #EDEDED; 
+}
+
+.rule {
+	padding-left: 12%;
+	color : #fff;
+	font-size: 1.2em;
+	position: relative;
+	top: -3em;
+	font-weight: 600;
+}
+
+#footer {
+	font-size: 0.8em;
+	color: #fff;
+	text-align: center;
+}
+
+/*ベース*/
+.toggle {
+	display: none;
+}
+.Label {		/*タイトル*/
+	padding: 0.5em;
+	display: block;
+	color: #FF9013;
+	background-color:#fff;
+}
+.Label::before{		/*タイトル横の矢印*/
+	content:"";
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #FF9013;
+	border-right: 2px solid #FF9013;
+	-webkit-transform: rotate(45deg);
+	position: absolute;
+	top:calc( 50% - 3px );
+	right: 100px;
+	transform: rotate(135deg);
+}
+.Label,
+.naiyou {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform: translateZ(0);
+	transition: all 0.3s;
+}
+.naiyou {		/*本文*/
+	height: 0;
+	margin-bottom:10px;
+	padding:0 20px;
+	overflow: hidden;
+	font-size: 0.8em;
+	background-color: rgba(0,0,0,0.7);
+line-height: 250%;
+}
+
+.naiyou h4 {
+	text-decoration: underline;
+}
+
+
+.caution {
+	background-color: rgba(0,0,0,0.05);
+	color: #fff;
+	border: 1px solid;
+	padding: 0.5em;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+.toggle:checked + .Label + .naiyou {	/*開閉時*/
+	height: auto;
+	padding:20px ;
+	transition: all .3s;
+}
+.toggle:checked + .Label::before {
+	transform: rotate(-45deg) !important;
+}
+
+
+/*ベース*/
+.toggle {
+	display: none;
+}
+
+.hiraku,
+.naiyou {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform: translateZ(0);
+	transition: all 0.3s;
+	z-index: 5;
+}
+.naiyou {		/*本文*/
+	height: 0;
+	margin-bottom:10px;
+	padding:0 20px;
+	overflow: hidden;
+	font-size: 0.8em;
+	background-color: rgba(0,0,0,0.7);
+line-height: 250%;
+}
+
+.naiyou h4 {
+	text-decoration: underline;
+}
+
+
+.caution {
+	background-color: rgba(0,0,0,0.05);
+	color: #fff;
+	border: 1px solid;
+	padding: 0.5em;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+.toggle:checked + .hiraku + .naiyou {	/*開閉時*/
+	height: auto;
+	padding:20px ;
+	transition: all .3s;
+}
+.toggle:checked + .hiraku::before {
+	transform: rotate(-45deg) !important;
+}
+
+.fadeUpTrigger{
+opacity: 0;
+}
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+@keyframes fadeUpAnime{
+from {
+    opacity: 0;
+    transform: translateY(100px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
