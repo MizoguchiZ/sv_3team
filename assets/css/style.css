@@ -250,6 +250,8 @@ background-image: repeating-linear-gradient(45deg, transparent, transparent 2px,
   border-bottom: 30px solid #EDEDED; 
 }
 
+
+
 #september {
 	position: relative;
 	background:#5B1C1D;
@@ -451,4 +453,8 @@ to {
     opacity: 1;
     transform: translateY(0);
 }
+}
+
+#august .Label {
+	color:#938A00;
 }
