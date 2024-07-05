@@ -69,7 +69,7 @@ font-style: normal;
 
 .rist {
 	color: #fff;
-	padding: 0 0% 0 6%;	
+	padding: 0 0% 1em 6%;	
 }
 
 .rist div {
@@ -220,7 +220,7 @@ background-image: repeating-linear-gradient(45deg, transparent, transparent 2px,
 #august {
 	position: relative;
 	background: #938A00;
-			padding-bottom: 1em;
+		padding-bottom: 10em;
 		background-image: url("../../images/BG.png");
 	background-size: cover;
 	background-attachment: fixed;
@@ -397,24 +397,20 @@ line-height: 250%;
 }
 
 .hiraku,
-.naiyou {
+.gaiyou {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	transform: translateZ(0);
 	transition: all 0.3s;
 	z-index: 5;
 }
-.naiyou {		/*本文*/
+.gaiyou {
 	height: 0;
-	margin-bottom:10px;
-	padding:0 20px;
+	margin-bottom:0.5em;
 	overflow: hidden;
-	font-size: 0.8em;
-	background-color: rgba(0,0,0,0.7);
-line-height: 250%;
 }
 
-.naiyou h4 {
+.gaiyou h4 {
 	text-decoration: underline;
 }
 
@@ -427,7 +423,7 @@ line-height: 250%;
 	font-size: 1.2em;
 	margin-bottom: 1em;
 }
-.toggle:checked + .hiraku + .naiyou {	/*開閉時*/
+.toggle:checked + .hiraku + .gaiyou {	/*開閉時*/
 	height: auto;
 	padding:20px ;
 	transition: all .3s;
